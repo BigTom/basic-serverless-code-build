@@ -1,0 +1,10 @@
+service: basic-serverless-code-build
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  role: arn:aws:iam::633213239760:role/basic-serverless-code-build-role
+
+functions:
+  hello:
+    handler: handler.hello
